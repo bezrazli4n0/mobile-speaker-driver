@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bezrazli4n0/projects/mobile-speaker-driver/apps/main.cpp
+iostream
+-
+../include/msd/AudioDriver.h
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriver.h
+
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriver.h
+AudioDriverWindows.h
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverWindows.h
+AudioDriverLinux.h
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverLinux.h
+
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverAbstract.h
+
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverLinux.h
+AudioDriverAbstract.h
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverAbstract.h
+
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverWindows.h
+AudioDriverAbstract.h
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverAbstract.h
+
+/home/bezrazli4n0/projects/mobile-speaker-driver/src/AudioDriver.cpp
+../include/msd/AudioDriver.h
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriver.h
+
+/home/bezrazli4n0/projects/mobile-speaker-driver/src/AudioDriverLinux.cpp
+../include/msd/AudioDriverLinux.h
+/home/bezrazli4n0/projects/mobile-speaker-driver/include/msd/AudioDriverLinux.h
+iostream
+-
+

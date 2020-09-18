@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -80,17 +92,15 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -113,16 +123,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -156,186 +156,6 @@ depend:
 	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-src/CMakeFiles/mobile_speaker_driver_lib.dir/rule:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mobile_speaker_driver_lib.dir/rule
-.PHONY : src/CMakeFiles/mobile_speaker_driver_lib.dir/rule
-
-# Convenience name for target.
-mobile_speaker_driver_lib: src/CMakeFiles/mobile_speaker_driver_lib.dir/rule
-
-.PHONY : mobile_speaker_driver_lib
-
-# fast build rule for target.
-mobile_speaker_driver_lib/fast:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/build
-.PHONY : mobile_speaker_driver_lib/fast
-
-# Convenience name for target.
-src/CMakeFiles/mobile_speaker_driver_run.dir/rule:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mobile_speaker_driver_run.dir/rule
-.PHONY : src/CMakeFiles/mobile_speaker_driver_run.dir/rule
-
-# Convenience name for target.
-mobile_speaker_driver_run: src/CMakeFiles/mobile_speaker_driver_run.dir/rule
-
-.PHONY : mobile_speaker_driver_run
-
-# fast build rule for target.
-mobile_speaker_driver_run/fast:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/build
-.PHONY : mobile_speaker_driver_run/fast
-
-AudioDriver.o: AudioDriver.cpp.o
-
-.PHONY : AudioDriver.o
-
-# target to build an object file
-AudioDriver.cpp.o:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriver.cpp.o
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriver.cpp.o
-.PHONY : AudioDriver.cpp.o
-
-AudioDriver.i: AudioDriver.cpp.i
-
-.PHONY : AudioDriver.i
-
-# target to preprocess a source file
-AudioDriver.cpp.i:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriver.cpp.i
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriver.cpp.i
-.PHONY : AudioDriver.cpp.i
-
-AudioDriver.s: AudioDriver.cpp.s
-
-.PHONY : AudioDriver.s
-
-# target to generate assembly for a file
-AudioDriver.cpp.s:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriver.cpp.s
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriver.cpp.s
-.PHONY : AudioDriver.cpp.s
-
-AudioDriverLinux.o: AudioDriverLinux.cpp.o
-
-.PHONY : AudioDriverLinux.o
-
-# target to build an object file
-AudioDriverLinux.cpp.o:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverLinux.cpp.o
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverLinux.cpp.o
-.PHONY : AudioDriverLinux.cpp.o
-
-AudioDriverLinux.i: AudioDriverLinux.cpp.i
-
-.PHONY : AudioDriverLinux.i
-
-# target to preprocess a source file
-AudioDriverLinux.cpp.i:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverLinux.cpp.i
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverLinux.cpp.i
-.PHONY : AudioDriverLinux.cpp.i
-
-AudioDriverLinux.s: AudioDriverLinux.cpp.s
-
-.PHONY : AudioDriverLinux.s
-
-# target to generate assembly for a file
-AudioDriverLinux.cpp.s:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverLinux.cpp.s
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverLinux.cpp.s
-.PHONY : AudioDriverLinux.cpp.s
-
-AudioDriverLinuxTest.o: AudioDriverLinuxTest.cpp.o
-
-.PHONY : AudioDriverLinuxTest.o
-
-# target to build an object file
-AudioDriverLinuxTest.cpp.o:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverLinuxTest.cpp.o
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverLinuxTest.cpp.o
-.PHONY : AudioDriverLinuxTest.cpp.o
-
-AudioDriverLinuxTest.i: AudioDriverLinuxTest.cpp.i
-
-.PHONY : AudioDriverLinuxTest.i
-
-# target to preprocess a source file
-AudioDriverLinuxTest.cpp.i:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverLinuxTest.cpp.i
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverLinuxTest.cpp.i
-.PHONY : AudioDriverLinuxTest.cpp.i
-
-AudioDriverLinuxTest.s: AudioDriverLinuxTest.cpp.s
-
-.PHONY : AudioDriverLinuxTest.s
-
-# target to generate assembly for a file
-AudioDriverLinuxTest.cpp.s:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverLinuxTest.cpp.s
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverLinuxTest.cpp.s
-.PHONY : AudioDriverLinuxTest.cpp.s
-
-AudioDriverWindows.o: AudioDriverWindows.cpp.o
-
-.PHONY : AudioDriverWindows.o
-
-# target to build an object file
-AudioDriverWindows.cpp.o:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverWindows.cpp.o
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverWindows.cpp.o
-.PHONY : AudioDriverWindows.cpp.o
-
-AudioDriverWindows.i: AudioDriverWindows.cpp.i
-
-.PHONY : AudioDriverWindows.i
-
-# target to preprocess a source file
-AudioDriverWindows.cpp.i:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverWindows.cpp.i
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverWindows.cpp.i
-.PHONY : AudioDriverWindows.cpp.i
-
-AudioDriverWindows.s: AudioDriverWindows.cpp.s
-
-.PHONY : AudioDriverWindows.s
-
-# target to generate assembly for a file
-AudioDriverWindows.cpp.s:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverWindows.cpp.s
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverWindows.cpp.s
-.PHONY : AudioDriverWindows.cpp.s
-
-AudioDriverWindowsTest.o: AudioDriverWindowsTest.cpp.o
-
-.PHONY : AudioDriverWindowsTest.o
-
-# target to build an object file
-AudioDriverWindowsTest.cpp.o:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverWindowsTest.cpp.o
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverWindowsTest.cpp.o
-.PHONY : AudioDriverWindowsTest.cpp.o
-
-AudioDriverWindowsTest.i: AudioDriverWindowsTest.cpp.i
-
-.PHONY : AudioDriverWindowsTest.i
-
-# target to preprocess a source file
-AudioDriverWindowsTest.cpp.i:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverWindowsTest.cpp.i
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverWindowsTest.cpp.i
-.PHONY : AudioDriverWindowsTest.cpp.i
-
-AudioDriverWindowsTest.s: AudioDriverWindowsTest.cpp.s
-
-.PHONY : AudioDriverWindowsTest.s
-
-# target to generate assembly for a file
-AudioDriverWindowsTest.cpp.s:
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/AudioDriverWindowsTest.cpp.s
-	cd /home/bezrazli4n0/projects/mobile-speaker-driver/build && $(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/AudioDriverWindowsTest.cpp.s
-.PHONY : AudioDriverWindowsTest.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -343,28 +163,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... mobile_speaker_driver_lib"
-	@echo "... mobile_speaker_driver_run"
 	@echo "... install"
+	@echo "... install/local"
+	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
-	@echo "... AudioDriver.o"
-	@echo "... AudioDriver.i"
-	@echo "... AudioDriver.s"
-	@echo "... AudioDriverLinux.o"
-	@echo "... AudioDriverLinux.i"
-	@echo "... AudioDriverLinux.s"
-	@echo "... AudioDriverLinuxTest.o"
-	@echo "... AudioDriverLinuxTest.i"
-	@echo "... AudioDriverLinuxTest.s"
-	@echo "... AudioDriverWindows.o"
-	@echo "... AudioDriverWindows.i"
-	@echo "... AudioDriverWindows.s"
-	@echo "... AudioDriverWindowsTest.o"
-	@echo "... AudioDriverWindowsTest.i"
-	@echo "... AudioDriverWindowsTest.s"
 .PHONY : help
 
 

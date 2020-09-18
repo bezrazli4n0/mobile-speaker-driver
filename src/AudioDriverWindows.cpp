@@ -1,5 +1,8 @@
+#ifdef _WIN32
+
 #include "../include/msd/AudioDriverWindows.h"
 #include <iostream>
+#include <Windows.h>
 
 namespace msd {
     AudioDriverWindows::AudioDriverWindows() {
@@ -16,3 +19,5 @@ namespace msd {
         std::cout << "Windows driver unloaded!" << std::endl;
     }
 }
+
+#endif

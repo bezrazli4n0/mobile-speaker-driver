@@ -1,3 +1,5 @@
+#ifdef __linux__
+
 #include "../include/msd/AudioDriverLinux.h"
 #include <iostream>
 
@@ -16,3 +18,5 @@ namespace msd {
         std::cout << "Linux driver unloaded!" << std::endl;
     }
 }
+
+#endif

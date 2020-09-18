@@ -147,9 +147,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mobile_speaker_driver.dir/DependInfo.cmake"
-  "src/CMakeFiles/mobile_speaker_driver_lib.dir/DependInfo.cmake"
-  "src/CMakeFiles/mobile_speaker_driver_run.dir/DependInfo.cmake"
-  "tests/CMakeFiles/mobile_speaker_driver_tst.dir/DependInfo.cmake"
+  "tests/CMakeFiles/mobile_speaker_driver_test.dir/DependInfo.cmake"
   "extern/googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "extern/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "extern/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"

@@ -170,43 +170,17 @@ mobile_speaker_driver/fast:
 .PHONY : mobile_speaker_driver/fast
 
 #=============================================================================
-# Target rules for targets named mobile_speaker_driver_lib
+# Target rules for targets named mobile_speaker_driver_test
 
 # Build rule for target.
-mobile_speaker_driver_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mobile_speaker_driver_lib
-.PHONY : mobile_speaker_driver_lib
+mobile_speaker_driver_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mobile_speaker_driver_test
+.PHONY : mobile_speaker_driver_test
 
 # fast build rule for target.
-mobile_speaker_driver_lib/fast:
-	$(MAKE) -f src/CMakeFiles/mobile_speaker_driver_lib.dir/build.make src/CMakeFiles/mobile_speaker_driver_lib.dir/build
-.PHONY : mobile_speaker_driver_lib/fast
-
-#=============================================================================
-# Target rules for targets named mobile_speaker_driver_run
-
-# Build rule for target.
-mobile_speaker_driver_run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mobile_speaker_driver_run
-.PHONY : mobile_speaker_driver_run
-
-# fast build rule for target.
-mobile_speaker_driver_run/fast:
-	$(MAKE) -f src/CMakeFiles/mobile_speaker_driver_run.dir/build.make src/CMakeFiles/mobile_speaker_driver_run.dir/build
-.PHONY : mobile_speaker_driver_run/fast
-
-#=============================================================================
-# Target rules for targets named mobile_speaker_driver_tst
-
-# Build rule for target.
-mobile_speaker_driver_tst: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mobile_speaker_driver_tst
-.PHONY : mobile_speaker_driver_tst
-
-# fast build rule for target.
-mobile_speaker_driver_tst/fast:
-	$(MAKE) -f tests/CMakeFiles/mobile_speaker_driver_tst.dir/build.make tests/CMakeFiles/mobile_speaker_driver_tst.dir/build
-.PHONY : mobile_speaker_driver_tst/fast
+mobile_speaker_driver_test/fast:
+	$(MAKE) -f tests/CMakeFiles/mobile_speaker_driver_test.dir/build.make tests/CMakeFiles/mobile_speaker_driver_test.dir/build
+.PHONY : mobile_speaker_driver_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -354,9 +328,7 @@ help:
 	@echo "... mobile_speaker_driver"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... mobile_speaker_driver_lib"
-	@echo "... mobile_speaker_driver_run"
-	@echo "... mobile_speaker_driver_tst"
+	@echo "... mobile_speaker_driver_test"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

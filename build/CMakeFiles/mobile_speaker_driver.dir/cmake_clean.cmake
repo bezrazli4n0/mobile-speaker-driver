@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mobile_speaker_driver.dir/apps/main.cpp.o"
-  "CMakeFiles/mobile_speaker_driver.dir/src/AudioDriver.cpp.o"
-  "CMakeFiles/mobile_speaker_driver.dir/src/AudioDriverLinux.cpp.o"
+  "CMakeFiles/mobile_speaker_driver.dir/apps/main.cpp.obj"
+  "CMakeFiles/mobile_speaker_driver.dir/src/AudioDriver.cpp.obj"
+  "CMakeFiles/mobile_speaker_driver.dir/src/AudioDriverWindows.cpp.obj"
+  "libmobile_speaker_driver.dll.a"
+  "mobile_speaker_driver.exe"
+  "mobile_speaker_driver.exe.manifest"
   "mobile_speaker_driver.pdb"
-  "mobile_speaker_driver"
 )
 
 # Per-language clean rules from dependency scanning.

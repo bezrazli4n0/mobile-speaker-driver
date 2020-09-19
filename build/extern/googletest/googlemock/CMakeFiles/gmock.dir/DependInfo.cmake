@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bezrazli4n0/projects/mobile-speaker-driver/extern/googletest/googlemock/src/gmock-all.cc" "/home/bezrazli4n0/projects/mobile-speaker-driver/build/extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+  "D:/Projects/mobile-speaker-driver/extern/googletest/googlemock/src/gmock-all.cc" "D:/Projects/mobile-speaker-driver/build/extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src"
   "../extern/googletest/googlemock/include"
   "../extern/googletest/googlemock"
   "../extern/googletest/googletest/include"
@@ -19,7 +18,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/bezrazli4n0/projects/mobile-speaker-driver/build/extern/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "D:/Projects/mobile-speaker-driver/build/extern/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

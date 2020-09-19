@@ -6,7 +6,7 @@ file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
 # Add array of src files in var
 file(GLOB_RECURSE TEST_SRC_SOURCES LIST_DIRECTORIES false ../src/*.h ../src/*.cpp)
 
-# Declare new variables
+# Declare new variables with source files
 set(SOURCES ${TEST_SOURCES})
 
 set(SRC_SOURCES ${TEST_SRC_SOURCES})

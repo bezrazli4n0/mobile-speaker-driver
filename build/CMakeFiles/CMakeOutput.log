@@ -1,6 +1,6 @@
-The system is: Linux - 5.6.0-2-amd64 - x86_64
+The system is: Windows - 10.0.19041 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
 Build flags: 
 Id flags:  
 
@@ -8,12 +8,12 @@ The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/3.13.4/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "D:/Projects/mobile-speaker-driver/build/CMakeFiles/3.17.2/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: C:/TDM-GCC-32/bin/c++.exe 
 Build flags: 
 Id flags:  
 
@@ -21,706 +21,476 @@ The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/3.13.4/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "D:/Projects/mobile-speaker-driver/build/CMakeFiles/3.17.2/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
+Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6312b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6312b.dir/build.make CMakeFiles/cmTC_6312b.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_6312b.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_6312b.dir/testCCompiler.c.o   -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_6312b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6312b.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_6312b.dir/testCCompiler.c.o  -o cmTC_6312b 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_3b818/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_3b818.dir/build.make CMakeFiles/cmTC_3b818.dir/build
+make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b818.dir/testCCompiler.c.obj
+C:/TDM-GCC-32/bin/gcc.exe    -o CMakeFiles/cmTC_3b818.dir/testCCompiler.c.obj   -c D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_3b818.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_3b818.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_3b818.dir/objects.a @CMakeFiles/cmTC_3b818.dir/objects1.rsp
+C:/TDM-GCC-32/bin/gcc.exe      -Wl,--whole-archive CMakeFiles/cmTC_3b818.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3b818.exe -Wl,--out-implib,libcmTC_3b818.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_3b818.dir/linklibs.rsp
+make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
+Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_182aa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_182aa.dir/build.make CMakeFiles/cmTC_182aa.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_182aa
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_182aa.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o  -o cmTC_182aa 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-gcc version 8.3.0 (Debian 8.3.0-6) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_182aa' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9iZ1kO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_182aa /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_182aa' '-mtune=generic' '-march=x86-64'
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_f81bd/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_f81bd.dir/build.make CMakeFiles/cmTC_f81bd.dir/build
+make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj
+C:/TDM-GCC-32/bin/gcc.exe   -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe
+Target: mingw32
+Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 9.2.0 (tdm-1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s
+GNU C17 (tdm-1) version 9.2.0 (mingw32)
+	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../include"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include-fixed"
+ignoring nonexistent directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed
+End of search list.
+GNU C17 (tdm-1) version 9.2.0 (mingw32)
+	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 8c746733866064ea178e3060bd583950
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s
+GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+Linking C executable cmTC_f81bd.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_f81bd.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_f81bd.dir/objects.a @CMakeFiles/cmTC_f81bd.dir/objects1.rsp
+C:/TDM-GCC-32/bin/gcc.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f81bd.exe -Wl,--out-implib,libcmTC_f81bd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe
+COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 9.2.0 (tdm-1) 
+COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f81bd.exe' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccufXlU0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_f81bd.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a --no-whole-archive --out-implib libcmTC_f81bd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f81bd.exe' '-mtune=generic' '-march=pentiumpro'
+make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include]
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include]
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed]
+  end of search list found
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include]
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include] ==> [C:/TDM-GCC-32/include]
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include-fixed]
+  implicit include dirs: [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include;C:/TDM-GCC-32/include;C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include-fixed]
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_182aa/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_182aa.dir/build.make CMakeFiles/cmTC_182aa.dir/build]
-  ignore line: [make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»]
-  ignore line: [Building C object CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_182aa]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_182aa.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o  -o cmTC_182aa ]
+  ignore line: [Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_f81bd/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_f81bd.dir/build.make CMakeFiles/cmTC_f81bd.dir/build]
+  ignore line: [make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:/TDM-GCC-32/bin/gcc.exe   -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_182aa' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9iZ1kO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_182aa /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/collect2] ==> ignore
+  ignore line: [gcc version 9.2.0 (tdm-1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s]
+  ignore line: [GNU C17 (tdm-1) version 9.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (tdm-1) version 9.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 8c746733866064ea178e3060bd583950]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s]
+  ignore line: [GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../libexec/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [Linking C executable cmTC_f81bd.exe]
+  ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_f81bd.dir/objects.a]
+  ignore line: [C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_f81bd.dir/objects.a @CMakeFiles/cmTC_f81bd.dir/objects1.rsp]
+  ignore line: [C:/TDM-GCC-32/bin/gcc.exe     -v -Wl --whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a -Wl --no-whole-archive  -o cmTC_f81bd.exe -Wl --out-implib libcmTC_f81bd.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.0 (tdm-1) ]
+  ignore line: [COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../libexec/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f81bd.exe' '-mtune=generic' '-march=pentiumpro']
+  link line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccufXlU0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_f81bd.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a --no-whole-archive --out-implib libcmTC_f81bd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o]
+    arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc9iZ1kO.res] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccufXlU0.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [--exclude-libs=libpthread.a] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--large-address-aware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_182aa] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_182aa.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_f81bd.exe] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o] ==> ignore
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0]
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc]
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib]
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles/cmTC_f81bd.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_f81bd.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [-lc] ==> lib [c]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8] ==> [/usr/lib/gcc/x86_64-linux-gnu/8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc] ==> [C:/TDM-GCC-32/lib/gcc]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib] ==> [C:/TDM-GCC-32/mingw32/lib]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..] ==> [C:/TDM-GCC-32/lib]
+  implicit libs: [mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+  implicit dirs: [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0;C:/TDM-GCC-32/lib/gcc;C:/TDM-GCC-32/mingw32/lib;C:/TDM-GCC-32/lib]
   implicit fwks: []
 
 
-
-
-Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_d39db/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d39db.dir/build.make CMakeFiles/cmTC_d39db.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_d39db.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_d39db.dir/feature_tests.c.o   -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_d39db
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d39db.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_d39db.dir/feature_tests.c.o  -o cmTC_d39db 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:1c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_648c3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_648c3.dir/build.make CMakeFiles/cmTC_648c3.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_648c3.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_648c3.dir/feature_tests.c.o   -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_648c3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_648c3.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_648c3.dir/feature_tests.c.o  -o cmTC_648c3 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_c6a07/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c6a07.dir/build.make CMakeFiles/cmTC_c6a07.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_c6a07.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_c6a07.dir/feature_tests.c.o   -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c6a07
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6a07.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_c6a07.dir/feature_tests.c.o  -o cmTC_c6a07 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:0c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
+Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_79b3a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_79b3a.dir/build.make CMakeFiles/cmTC_79b3a.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_79b3a.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_79b3a.dir/testCXXCompiler.cxx.o -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_79b3a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79b3a.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_79b3a.dir/testCXXCompiler.cxx.o  -o cmTC_79b3a 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_f6403/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_f6403.dir/build.make CMakeFiles/cmTC_f6403.dir/build
+make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f6403.dir/testCXXCompiler.cxx.obj
+C:/TDM-GCC-32/bin/c++.exe     -o CMakeFiles/cmTC_f6403.dir/testCXXCompiler.cxx.obj -c D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_f6403.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_f6403.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_f6403.dir/objects.a @CMakeFiles/cmTC_f6403.dir/objects1.rsp
+C:/TDM-GCC-32/bin/c++.exe      -Wl,--whole-archive CMakeFiles/cmTC_f6403.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f6403.exe -Wl,--out-implib,libcmTC_f6403.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f6403.dir/linklibs.rsp
+make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
+Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d2cbe/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d2cbe.dir/build.make CMakeFiles/cmTC_d2cbe.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_d2cbe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2cbe.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d2cbe 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-gcc version 8.3.0 (Debian 8.3.0-6) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2cbe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRGGMM8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d2cbe /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2cbe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_63944/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_63944.dir/build.make CMakeFiles/cmTC_63944.dir/build
+make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj
+C:/TDM-GCC-32/bin/c++.exe    -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
+Using built-in specs.
+COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe
+Target: mingw32
+Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 9.2.0 (tdm-1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s
+GNU C++14 (tdm-1) version 9.2.0 (mingw32)
+	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include/c++"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include/c++/mingw32"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include/c++/backward"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../include"
+ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include-fixed"
+ignoring nonexistent directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/mingw32
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/backward
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed
+End of search list.
+GNU C++14 (tdm-1) version 9.2.0 (mingw32)
+	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: cec88cab7e5656891cdd620c5c33a356
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s
+GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+Linking CXX executable cmTC_63944.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_63944.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_63944.dir/objects.a @CMakeFiles/cmTC_63944.dir/objects1.rsp
+C:/TDM-GCC-32/bin/c++.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_63944.dir/objects.a -Wl,--no-whole-archive  -o cmTC_63944.exe -Wl,--out-implib,libcmTC_63944.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe
+COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 9.2.0 (tdm-1) 
+COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63944.exe' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cctyf1SH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_63944.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_63944.dir/objects.a --no-whole-archive --out-implib libcmTC_63944.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63944.exe' '-mtune=generic' '-march=pentiumpro'
+make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++]
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/mingw32]
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/backward]
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include]
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include]
+    add: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed]
+  end of search list found
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include/c++]
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/mingw32] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include/c++/mingw32]
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/backward] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include/c++/backward]
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include]
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include] ==> [C:/TDM-GCC-32/include]
+  collapse include dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include-fixed]
+  implicit include dirs: [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include/c++;C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include/c++/mingw32;C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include/c++/backward;C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include;C:/TDM-GCC-32/include;C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0/include-fixed]
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d2cbe/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d2cbe.dir/build.make CMakeFiles/cmTC_d2cbe.dir/build]
-  ignore line: [make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»]
-  ignore line: [Building CXX object CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_d2cbe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2cbe.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d2cbe ]
+  ignore line: [Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_63944/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_63944.dir/build.make CMakeFiles/cmTC_63944.dir/build]
+  ignore line: [make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:/TDM-GCC-32/bin/c++.exe    -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2cbe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRGGMM8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d2cbe /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/collect2] ==> ignore
+  ignore line: [gcc version 9.2.0 (tdm-1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s]
+  ignore line: [GNU C++14 (tdm-1) version 9.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include/c++"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include/c++/mingw32"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include/c++/backward"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "C:/TDM-GCC-32/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/mingw32]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include/c++/backward]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../include]
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/include-fixed]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (tdm-1) version 9.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: cec88cab7e5656891cdd620c5c33a356]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s]
+  ignore line: [GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../libexec/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [Linking CXX executable cmTC_63944.exe]
+  ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_63944.dir/objects.a]
+  ignore line: [C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_63944.dir/objects.a @CMakeFiles/cmTC_63944.dir/objects1.rsp]
+  ignore line: [C:/TDM-GCC-32/bin/c++.exe     -v -Wl --whole-archive CMakeFiles/cmTC_63944.dir/objects.a -Wl --no-whole-archive  -o cmTC_63944.exe -Wl --out-implib libcmTC_63944.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.0 (tdm-1) ]
+  ignore line: [COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../libexec/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
+  ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63944.exe' '-mtune=generic' '-march=pentiumpro']
+  link line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cctyf1SH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_63944.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_63944.dir/objects.a --no-whole-archive --out-implib libcmTC_63944.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o]
+    arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccRGGMM8.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cctyf1SH.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [--exclude-libs=libpthread.a] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--large-address-aware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d2cbe] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_d2cbe.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_63944.exe] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o] ==> ignore
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0]
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc]
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib]
+    arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles/cmTC_63944.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_63944.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-Bstatic] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-Bdynamic] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8] ==> [/usr/lib/gcc/x86_64-linux-gnu/8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o] ==> ignore
+    arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0] ==> [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc] ==> [C:/TDM-GCC-32/lib/gcc]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib] ==> [C:/TDM-GCC-32/mingw32/lib]
+  collapse library dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..] ==> [C:/TDM-GCC-32/lib]
+  implicit libs: [stdc++;mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+  implicit dirs: [C:/TDM-GCC-32/lib/gcc/mingw32/9.2.0;C:/TDM-GCC-32/lib/gcc;C:/TDM-GCC-32/mingw32/lib;C:/TDM-GCC-32/lib]
   implicit fwks: []
-
-
-
-
-Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_3ed47/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3ed47.dir/build.make CMakeFiles/cmTC_3ed47.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_3ed47.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_3ed47.dir/feature_tests.cxx.o -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_3ed47
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ed47.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_3ed47.dir/feature_tests.cxx.o  -o cmTC_3ed47 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_bbd53/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bbd53.dir/build.make CMakeFiles/cmTC_bbd53.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_bbd53.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_bbd53.dir/feature_tests.cxx.o -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_bbd53
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbd53.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_bbd53.dir/feature_tests.cxx.o  -o cmTC_bbd53 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_df4a6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_df4a6.dir/build.make CMakeFiles/cmTC_df4a6.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_df4a6.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_df4a6.dir/feature_tests.cxx.o -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_df4a6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df4a6.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_df4a6.dir/feature_tests.cxx.o  -o cmTC_df4a6 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_310ed/fast"
-/usr/bin/make -f CMakeFiles/cmTC_310ed.dir/build.make CMakeFiles/cmTC_310ed.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_310ed.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_310ed.dir/feature_tests.cxx.o -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_310ed
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_310ed.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_310ed.dir/feature_tests.cxx.o  -o cmTC_310ed 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:0cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:0cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:0cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:0cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:0cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:0cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_c1d92/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c1d92.dir/build.make CMakeFiles/cmTC_c1d92.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_c1d92.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_c1d92.dir/feature_tests.cxx.o -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c1d92
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1d92.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_c1d92.dir/feature_tests.cxx.o  -o cmTC_c1d92 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:0cxx_alias_templates
-    Feature record: CXX_FEATURE:0cxx_alignas
-    Feature record: CXX_FEATURE:0cxx_alignof
-    Feature record: CXX_FEATURE:0cxx_attributes
-    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:0cxx_auto_type
-    Feature record: CXX_FEATURE:0cxx_binary_literals
-    Feature record: CXX_FEATURE:0cxx_constexpr
-    Feature record: CXX_FEATURE:0cxx_contextual_conversions
-    Feature record: CXX_FEATURE:0cxx_decltype
-    Feature record: CXX_FEATURE:0cxx_decltype_auto
-    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:0cxx_default_function_template_args
-    Feature record: CXX_FEATURE:0cxx_defaulted_functions
-    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:0cxx_delegating_constructors
-    Feature record: CXX_FEATURE:0cxx_deleted_functions
-    Feature record: CXX_FEATURE:0cxx_digit_separators
-    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:0cxx_explicit_conversions
-    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:0cxx_extern_templates
-    Feature record: CXX_FEATURE:0cxx_final
-    Feature record: CXX_FEATURE:0cxx_func_identifier
-    Feature record: CXX_FEATURE:0cxx_generalized_initializers
-    Feature record: CXX_FEATURE:0cxx_generic_lambdas
-    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:0cxx_inline_namespaces
-    Feature record: CXX_FEATURE:0cxx_lambdas
-    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:0cxx_local_type_template_args
-    Feature record: CXX_FEATURE:0cxx_long_long_type
-    Feature record: CXX_FEATURE:0cxx_noexcept
-    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:0cxx_nullptr
-    Feature record: CXX_FEATURE:0cxx_override
-    Feature record: CXX_FEATURE:0cxx_range_for
-    Feature record: CXX_FEATURE:0cxx_raw_string_literals
-    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:0cxx_return_type_deduction
-    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:0cxx_rvalue_references
-    Feature record: CXX_FEATURE:0cxx_sizeof_member
-    Feature record: CXX_FEATURE:0cxx_static_assert
-    Feature record: CXX_FEATURE:0cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:0cxx_thread_local
-    Feature record: CXX_FEATURE:0cxx_trailing_return_types
-    Feature record: CXX_FEATURE:0cxx_unicode_literals
-    Feature record: CXX_FEATURE:0cxx_uniform_initialization
-    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:0cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
-    Feature record: CXX_FEATURE:0cxx_variadic_macros
-    Feature record: CXX_FEATURE:0cxx_variadic_templates
-Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_3db33/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3db33.dir/build.make CMakeFiles/cmTC_3db33.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_3db33.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3db33.dir/CheckIncludeFile.c.o   -c /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3db33
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3db33.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3db33.dir/CheckIncludeFile.c.o  -o cmTC_3db33 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-
-
-Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_825eb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_825eb.dir/build.make CMakeFiles/cmTC_825eb.dir/build
-make[1]: вход в каталог «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_825eb.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_825eb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_825eb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_825eb.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_825eb.dir/CheckFunctionExists.c.o  -o cmTC_825eb -lpthread 
-make[1]: выход из каталога «/home/bezrazli4n0/projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp»
 
 

@@ -7,11 +7,7 @@ project(mobile_speaker_driver)
 # Change c++ standard
 set(CMAKE_CXX_STANDARD 17)
 
-# Include googletest directory
-include_directories(src extern/googletest/googletest/include)
-
 # Adding subdirs to project
-add_subdirectory(src)
 add_subdirectory(tests)
 add_subdirectory(extern/googletest)
 

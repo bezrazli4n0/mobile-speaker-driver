@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bezrazli4n0/projects/mobile-speaker-driver/extern/googletest/googletest/src/gtest-all.cc" "/home/bezrazli4n0/projects/mobile-speaker-driver/build/extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+  "D:/Projects/mobile-speaker-driver/extern/googletest/googletest/src/gtest-all.cc" "D:/Projects/mobile-speaker-driver/build/extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src"
   "../extern/googletest/googletest/include"
   "../extern/googletest/googletest"
   )

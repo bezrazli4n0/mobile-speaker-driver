@@ -306,11 +306,14 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON
 
+//Build the tests
+PACKAGE_TESTS:BOOL=ON
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=C:/Users/bezrazli4n0/AppData/Local/Programs/Python/Python38-32/python.exe
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=D:/Projects/mobile-speaker-driver/build/extern/googletest/googlemock
+gmock_BINARY_DIR:STATIC=D:/Projects/mobile-speaker-driver/build/tests/extern/googletest/googlemock
 
 //Dependencies for the target
 gmock_LIB_DEPENDS:STATIC=general;gtest;
@@ -325,13 +328,13 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;gmock;
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=D:/Projects/mobile-speaker-driver/build/extern/googletest
+googletest-distribution_BINARY_DIR:STATIC=D:/Projects/mobile-speaker-driver/build/tests/extern/googletest
 
 //Value Computed by CMake
 googletest-distribution_SOURCE_DIR:STATIC=D:/Projects/mobile-speaker-driver/extern/googletest
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=D:/Projects/mobile-speaker-driver/build/extern/googletest/googletest
+gtest_BINARY_DIR:STATIC=D:/Projects/mobile-speaker-driver/build/tests/extern/googletest/googletest
 
 //Value Computed by CMake
 gtest_SOURCE_DIR:STATIC=D:/Projects/mobile-speaker-driver/extern/googletest/googletest
@@ -562,7 +565,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Users/bezrazli4n0/AppData
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/mobile_speaker_driver
-generated_dir:INTERNAL=D:/Projects/mobile-speaker-driver/build/extern/googletest/googletest/generated
+generated_dir:INTERNAL=D:/Projects/mobile-speaker-driver/build/tests/extern/googletest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

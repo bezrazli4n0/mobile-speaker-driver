@@ -95,6 +95,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageMessage.cmake"
   "C:/Program Files/CMake/share/cmake-3.17/Modules/FindPythonInterp.cmake"
   "C:/Program Files/CMake/share/cmake-3.17/Modules/GNUInstallDirs.cmake"
+  "C:/Program Files/CMake/share/cmake-3.17/Modules/GoogleTest.cmake"
   "C:/Program Files/CMake/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "C:/Program Files/CMake/share/cmake-3.17/Modules/Internal/FeatureTesting.cmake"
   "C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-Determine-CXX.cmake"
@@ -140,17 +141,17 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.17.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "extern/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "extern/googletest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "extern/googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/extern/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/extern/googletest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/extern/googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mobile_speaker_driver.dir/DependInfo.cmake"
   "tests/CMakeFiles/mobile_speaker_driver_test.dir/DependInfo.cmake"
-  "extern/googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "extern/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "extern/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "extern/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "tests/extern/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

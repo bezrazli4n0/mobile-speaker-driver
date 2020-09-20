@@ -1,19 +1,13 @@
-set(BINARY ${CMAKE_PROJECT_NAME}_test)
+# Set variable to project name
+set(TESTBINARY ${PROJECT_NAME}_test)
 
-# Add array of files in variable
-file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
+# Include googletest
+add_subdirectory("${PROJECT_SOURCE_DIR}/extern/googletest" "extern/googletest")
 
-# Add array of src files in var
-file(GLOB_RECURSE TEST_SRC_SOURCES LIST_DIRECTORIES false ../src/*.h ../src/*.cpp)
+# Add all source files to variable
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true ${PROJECT_SOURCE_DIR}/src/*.cpp)
 
-# Declare new variables with source files
-set(SOURCES ${TEST_SOURCES})
+add_executable(${TESTBINARY} main.cpp AudioDriverTest.cpp ${SOURCES})
 
-set(SRC_SOURCES ${TEST_SRC_SOURCES})
-
-# Create test executable
-add_executable(${BINARY} ${TEST_SOURCES} ${TEST_SRC_SOURCES})
-
-add_test(NAME ${BINARY} COMMAND ${BINARY})
-
-target_link_libraries(${BINARY} PUBLIC gtest)
+# Link googletest libs
+target_link_libraries(${TESTBINARY} gtest gtest_main)

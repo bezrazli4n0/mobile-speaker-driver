@@ -20,7 +20,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "D:/Projects/mobile-speaker-driver/build/extern/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "D:/Projects/mobile-speaker-driver/build/tests/extern/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "D:/Projects/mobile-speaker-driver/build/tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

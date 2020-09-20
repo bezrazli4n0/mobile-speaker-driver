@@ -75,100 +75,99 @@ CMAKE_BINARY_DIR = D:/Projects/mobile-speaker-driver/build
 # The main recursive "all" target.
 all: CMakeFiles/mobile_speaker_driver.dir/all
 all: tests/all
-all: extern/googletest/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: tests/preinstall
-preinstall: extern/googletest/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/mobile_speaker_driver.dir/clean
 clean: tests/clean
-clean: extern/googletest/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory extern/googletest
-
-# Recursive "all" directory target.
-extern/googletest/all: extern/googletest/googlemock/all
-
-.PHONY : extern/googletest/all
-
-# Recursive "preinstall" directory target.
-extern/googletest/preinstall: extern/googletest/googlemock/preinstall
-
-.PHONY : extern/googletest/preinstall
-
-# Recursive "clean" directory target.
-extern/googletest/clean: extern/googletest/googlemock/clean
-
-.PHONY : extern/googletest/clean
-
-#=============================================================================
-# Directory level rules for directory extern/googletest/googlemock
-
-# Recursive "all" directory target.
-extern/googletest/googlemock/all: extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all
-extern/googletest/googlemock/all: extern/googletest/googlemock/CMakeFiles/gmock.dir/all
-extern/googletest/googlemock/all: extern/googletest/googletest/all
-
-.PHONY : extern/googletest/googlemock/all
-
-# Recursive "preinstall" directory target.
-extern/googletest/googlemock/preinstall: extern/googletest/googletest/preinstall
-
-.PHONY : extern/googletest/googlemock/preinstall
-
-# Recursive "clean" directory target.
-extern/googletest/googlemock/clean: extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
-extern/googletest/googlemock/clean: extern/googletest/googlemock/CMakeFiles/gmock.dir/clean
-extern/googletest/googlemock/clean: extern/googletest/googletest/clean
-
-.PHONY : extern/googletest/googlemock/clean
-
-#=============================================================================
-# Directory level rules for directory extern/googletest/googletest
-
-# Recursive "all" directory target.
-extern/googletest/googletest/all: extern/googletest/googletest/CMakeFiles/gtest.dir/all
-extern/googletest/googletest/all: extern/googletest/googletest/CMakeFiles/gtest_main.dir/all
-
-.PHONY : extern/googletest/googletest/all
-
-# Recursive "preinstall" directory target.
-extern/googletest/googletest/preinstall:
-
-.PHONY : extern/googletest/googletest/preinstall
-
-# Recursive "clean" directory target.
-extern/googletest/googletest/clean: extern/googletest/googletest/CMakeFiles/gtest.dir/clean
-extern/googletest/googletest/clean: extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean
-
-.PHONY : extern/googletest/googletest/clean
 
 #=============================================================================
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
 tests/all: tests/CMakeFiles/mobile_speaker_driver_test.dir/all
+tests/all: tests/extern/googletest/all
 
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
-tests/preinstall:
+tests/preinstall: tests/extern/googletest/preinstall
 
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
 tests/clean: tests/CMakeFiles/mobile_speaker_driver_test.dir/clean
+tests/clean: tests/extern/googletest/clean
 
 .PHONY : tests/clean
+
+#=============================================================================
+# Directory level rules for directory tests/extern/googletest
+
+# Recursive "all" directory target.
+tests/extern/googletest/all: tests/extern/googletest/googlemock/all
+
+.PHONY : tests/extern/googletest/all
+
+# Recursive "preinstall" directory target.
+tests/extern/googletest/preinstall: tests/extern/googletest/googlemock/preinstall
+
+.PHONY : tests/extern/googletest/preinstall
+
+# Recursive "clean" directory target.
+tests/extern/googletest/clean: tests/extern/googletest/googlemock/clean
+
+.PHONY : tests/extern/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory tests/extern/googletest/googlemock
+
+# Recursive "all" directory target.
+tests/extern/googletest/googlemock/all: tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+tests/extern/googletest/googlemock/all: tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/all
+tests/extern/googletest/googlemock/all: tests/extern/googletest/googletest/all
+
+.PHONY : tests/extern/googletest/googlemock/all
+
+# Recursive "preinstall" directory target.
+tests/extern/googletest/googlemock/preinstall: tests/extern/googletest/googletest/preinstall
+
+.PHONY : tests/extern/googletest/googlemock/preinstall
+
+# Recursive "clean" directory target.
+tests/extern/googletest/googlemock/clean: tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+tests/extern/googletest/googlemock/clean: tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/clean
+tests/extern/googletest/googlemock/clean: tests/extern/googletest/googletest/clean
+
+.PHONY : tests/extern/googletest/googlemock/clean
+
+#=============================================================================
+# Directory level rules for directory tests/extern/googletest/googletest
+
+# Recursive "all" directory target.
+tests/extern/googletest/googletest/all: tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all
+tests/extern/googletest/googletest/all: tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : tests/extern/googletest/googletest/all
+
+# Recursive "preinstall" directory target.
+tests/extern/googletest/googletest/preinstall:
+
+.PHONY : tests/extern/googletest/googletest/preinstall
+
+# Recursive "clean" directory target.
+tests/extern/googletest/googletest/clean: tests/extern/googletest/googletest/CMakeFiles/gtest.dir/clean
+tests/extern/googletest/googletest/clean: tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : tests/extern/googletest/googletest/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mobile_speaker_driver.dir
@@ -201,7 +200,8 @@ CMakeFiles/mobile_speaker_driver.dir/clean:
 # Target rules for target tests/CMakeFiles/mobile_speaker_driver_test.dir
 
 # All Build rule for target.
-tests/CMakeFiles/mobile_speaker_driver_test.dir/all: extern/googletest/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/mobile_speaker_driver_test.dir/all: tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/mobile_speaker_driver_test.dir/all: tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/mobile_speaker_driver_test.dir/build.make tests/CMakeFiles/mobile_speaker_driver_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/mobile_speaker_driver_test.dir/build.make tests/CMakeFiles/mobile_speaker_driver_test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target mobile_speaker_driver_test"
@@ -209,7 +209,7 @@ tests/CMakeFiles/mobile_speaker_driver_test.dir/all: extern/googletest/googletes
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/mobile_speaker_driver_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/mobile_speaker_driver_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/mobile_speaker_driver_test.dir/rule
@@ -225,113 +225,113 @@ tests/CMakeFiles/mobile_speaker_driver_test.dir/clean:
 .PHONY : tests/CMakeFiles/mobile_speaker_driver_test.dir/clean
 
 #=============================================================================
-# Target rules for target extern/googletest/googlemock/CMakeFiles/gmock_main.dir
+# Target rules for target tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all: extern/googletest/googlemock/CMakeFiles/gmock.dir/all
-extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all: extern/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make extern/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all: tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/all
+tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all: tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
-.PHONY : extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+.PHONY : tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
-extern/googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 0
-.PHONY : extern/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
-gmock_main: extern/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+gmock_main: tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 .PHONY : gmock_main
 
 # clean rule for target.
-extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
-.PHONY : extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : tests/extern/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
 
 #=============================================================================
-# Target rules for target extern/googletest/googlemock/CMakeFiles/gmock.dir
+# Target rules for target tests/extern/googletest/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
-extern/googletest/googlemock/CMakeFiles/gmock.dir/all: extern/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googlemock/CMakeFiles/gmock.dir/build.make extern/googletest/googlemock/CMakeFiles/gmock.dir/depend
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googlemock/CMakeFiles/gmock.dir/build.make extern/googletest/googlemock/CMakeFiles/gmock.dir/build
+tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/all: tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/build.make tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/build.make tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=1,2 "Built target gmock"
-.PHONY : extern/googletest/googlemock/CMakeFiles/gmock.dir/all
+.PHONY : tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
-extern/googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extern/googletest/googlemock/CMakeFiles/gmock.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 0
-.PHONY : extern/googletest/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
-gmock: extern/googletest/googlemock/CMakeFiles/gmock.dir/rule
+gmock: tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/rule
 
 .PHONY : gmock
 
 # clean rule for target.
-extern/googletest/googlemock/CMakeFiles/gmock.dir/clean:
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googlemock/CMakeFiles/gmock.dir/build.make extern/googletest/googlemock/CMakeFiles/gmock.dir/clean
-.PHONY : extern/googletest/googlemock/CMakeFiles/gmock.dir/clean
+tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/build.make tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : tests/extern/googletest/googlemock/CMakeFiles/gmock.dir/clean
 
 #=============================================================================
-# Target rules for target extern/googletest/googletest/CMakeFiles/gtest.dir
+# Target rules for target tests/extern/googletest/googletest/CMakeFiles/gtest.dir
 
 # All Build rule for target.
-extern/googletest/googletest/CMakeFiles/gtest.dir/all:
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googletest/CMakeFiles/gtest.dir/build.make extern/googletest/googletest/CMakeFiles/gtest.dir/depend
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googletest/CMakeFiles/gtest.dir/build.make extern/googletest/googletest/CMakeFiles/gtest.dir/build
+tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googletest/CMakeFiles/gtest.dir/build.make tests/extern/googletest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googletest/CMakeFiles/gtest.dir/build.make tests/extern/googletest/googletest/CMakeFiles/gtest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=5,6 "Built target gtest"
-.PHONY : extern/googletest/googletest/CMakeFiles/gtest.dir/all
+.PHONY : tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
-extern/googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+tests/extern/googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extern/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 0
-.PHONY : extern/googletest/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : tests/extern/googletest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
-gtest: extern/googletest/googletest/CMakeFiles/gtest.dir/rule
+gtest: tests/extern/googletest/googletest/CMakeFiles/gtest.dir/rule
 
 .PHONY : gtest
 
 # clean rule for target.
-extern/googletest/googletest/CMakeFiles/gtest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googletest/CMakeFiles/gtest.dir/build.make extern/googletest/googletest/CMakeFiles/gtest.dir/clean
-.PHONY : extern/googletest/googletest/CMakeFiles/gtest.dir/clean
+tests/extern/googletest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googletest/CMakeFiles/gtest.dir/build.make tests/extern/googletest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : tests/extern/googletest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target extern/googletest/googletest/CMakeFiles/gtest_main.dir
+# Target rules for target tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir
 
 # All Build rule for target.
-extern/googletest/googletest/CMakeFiles/gtest_main.dir/all: extern/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googletest/CMakeFiles/gtest_main.dir/build.make extern/googletest/googletest/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googletest/CMakeFiles/gtest_main.dir/build.make extern/googletest/googletest/CMakeFiles/gtest_main.dir/build
+tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/all: tests/extern/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/build.make tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/build.make tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
-.PHONY : extern/googletest/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
-extern/googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extern/googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/mobile-speaker-driver/build/CMakeFiles 0
-.PHONY : extern/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
-gtest_main: extern/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+gtest_main: tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/rule
 
 .PHONY : gtest_main
 
 # clean rule for target.
-extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f extern/googletest/googletest/CMakeFiles/gtest_main.dir/build.make extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/build.make tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : tests/extern/googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

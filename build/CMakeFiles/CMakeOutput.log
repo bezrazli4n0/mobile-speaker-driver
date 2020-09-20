@@ -28,14 +28,14 @@ The CXX compiler identification is GNU, found in "D:/Projects/mobile-speaker-dri
 Determining if the C compiler works passed with the following output:
 Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_3b818/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_3b818.dir/build.make CMakeFiles/cmTC_3b818.dir/build
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_54125/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_54125.dir/build.make CMakeFiles/cmTC_54125.dir/build
 make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3b818.dir/testCCompiler.c.obj
-C:/TDM-GCC-32/bin/gcc.exe    -o CMakeFiles/cmTC_3b818.dir/testCCompiler.c.obj   -c D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_3b818.exe
-"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_3b818.dir/objects.a
-C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_3b818.dir/objects.a @CMakeFiles/cmTC_3b818.dir/objects1.rsp
-C:/TDM-GCC-32/bin/gcc.exe      -Wl,--whole-archive CMakeFiles/cmTC_3b818.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3b818.exe -Wl,--out-implib,libcmTC_3b818.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_3b818.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_54125.dir/testCCompiler.c.obj
+C:/TDM-GCC-32/bin/gcc.exe    -o CMakeFiles/cmTC_54125.dir/testCCompiler.c.obj   -c D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_54125.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_54125.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_54125.dir/objects.a @CMakeFiles/cmTC_54125.dir/objects1.rsp
+C:/TDM-GCC-32/bin/gcc.exe      -Wl,--whole-archive CMakeFiles/cmTC_54125.dir/objects.a -Wl,--no-whole-archive  -o cmTC_54125.exe -Wl,--out-implib,libcmTC_54125.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_54125.dir/linklibs.rsp
 make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
 
 
@@ -43,18 +43,18 @@ make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFil
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_f81bd/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_f81bd.dir/build.make CMakeFiles/cmTC_f81bd.dir/build
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_58fc9/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_58fc9.dir/build.make CMakeFiles/cmTC_58fc9.dir/build
 make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj
-C:/TDM-GCC-32/bin/gcc.exe   -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c"
+Building C object CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj
+C:/TDM-GCC-32/bin/gcc.exe   -v -o CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c"
 Using built-in specs.
 COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe
 Target: mingw32
 Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
 Thread model: posix
 gcc version 9.2.0 (tdm-1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
- C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbQnLq.s
 GNU C17 (tdm-1) version 9.2.0 (mingw32)
 	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -75,16 +75,16 @@ GNU C17 (tdm-1) version 9.2.0 (mingw32)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 8c746733866064ea178e3060bd583950
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
- C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbQnLq.s
 GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
 COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
 LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
-Linking C executable cmTC_f81bd.exe
-"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_f81bd.dir/objects.a
-C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_f81bd.dir/objects.a @CMakeFiles/cmTC_f81bd.dir/objects1.rsp
-C:/TDM-GCC-32/bin/gcc.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f81bd.exe -Wl,--out-implib,libcmTC_f81bd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+Linking C executable cmTC_58fc9.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_58fc9.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_58fc9.dir/objects.a @CMakeFiles/cmTC_58fc9.dir/objects1.rsp
+C:/TDM-GCC-32/bin/gcc.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_58fc9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_58fc9.exe -Wl,--out-implib,libcmTC_58fc9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe
 COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe
@@ -94,9 +94,9 @@ Thread model: posix
 gcc version 9.2.0 (tdm-1) 
 COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
 LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f81bd.exe' '-mtune=generic' '-march=pentiumpro'
- C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccufXlU0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_f81bd.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a --no-whole-archive --out-implib libcmTC_f81bd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f81bd.exe' '-mtune=generic' '-march=pentiumpro'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58fc9.exe' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cckdA9Px.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_58fc9.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_58fc9.dir/objects.a --no-whole-archive --out-implib libcmTC_58fc9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58fc9.exe' '-mtune=generic' '-march=pentiumpro'
 make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
 
 
@@ -118,18 +118,18 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_f81bd/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_f81bd.dir/build.make CMakeFiles/cmTC_f81bd.dir/build]
+  ignore line: [Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_58fc9/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_58fc9.dir/build.make CMakeFiles/cmTC_58fc9.dir/build]
   ignore line: [make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:/TDM-GCC-32/bin/gcc.exe   -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c"]
+  ignore line: [Building C object CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:/TDM-GCC-32/bin/gcc.exe   -v -o CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe]
   ignore line: [Target: mingw32]
   ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.2.0 (tdm-1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
-  ignore line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbQnLq.s]
   ignore line: [GNU C17 (tdm-1) version 9.2.0 (mingw32)]
   ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -150,8 +150,8 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 8c746733866064ea178e3060bd583950]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
-  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccujJCCS.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbQnLq.s]
   ignore line: [GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32]
   ignore line: [COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/]
   ignore line: [C:/TDM-GCC-32/bin/../libexec/gcc/]
@@ -160,11 +160,11 @@ Parsed C implicit link information from above output:
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f81bd.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
-  ignore line: [Linking C executable cmTC_f81bd.exe]
-  ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_f81bd.dir/objects.a]
-  ignore line: [C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_f81bd.dir/objects.a @CMakeFiles/cmTC_f81bd.dir/objects1.rsp]
-  ignore line: [C:/TDM-GCC-32/bin/gcc.exe     -v -Wl --whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a -Wl --no-whole-archive  -o cmTC_f81bd.exe -Wl --out-implib libcmTC_f81bd.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58fc9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [Linking C executable cmTC_58fc9.exe]
+  ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_58fc9.dir/objects.a]
+  ignore line: [C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_58fc9.dir/objects.a @CMakeFiles/cmTC_58fc9.dir/objects1.rsp]
+  ignore line: [C:/TDM-GCC-32/bin/gcc.exe     -v -Wl --whole-archive CMakeFiles/cmTC_58fc9.dir/objects.a -Wl --no-whole-archive  -o cmTC_58fc9.exe -Wl --out-implib libcmTC_58fc9.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe]
@@ -179,13 +179,13 @@ Parsed C implicit link information from above output:
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f81bd.exe' '-mtune=generic' '-march=pentiumpro']
-  link line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccufXlU0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_f81bd.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_f81bd.dir/objects.a --no-whole-archive --out-implib libcmTC_f81bd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58fc9.exe' '-mtune=generic' '-march=pentiumpro']
+  link line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cckdA9Px.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_58fc9.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_58fc9.dir/objects.a --no-whole-archive --out-implib libcmTC_58fc9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o]
     arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccufXlU0.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cckdA9Px.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
@@ -205,7 +205,7 @@ Parsed C implicit link information from above output:
     arg [-Bdynamic] ==> ignore
     arg [--large-address-aware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f81bd.exe] ==> ignore
+    arg [cmTC_58fc9.exe] ==> ignore
     arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o] ==> ignore
     arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o] ==> ignore
     arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0]
@@ -213,10 +213,10 @@ Parsed C implicit link information from above output:
     arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib]
     arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_f81bd.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_58fc9.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_f81bd.dll.a] ==> ignore
+    arg [libcmTC_58fc9.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -252,14 +252,14 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_f6403/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_f6403.dir/build.make CMakeFiles/cmTC_f6403.dir/build
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_8cb07/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_8cb07.dir/build.make CMakeFiles/cmTC_8cb07.dir/build
 make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f6403.dir/testCXXCompiler.cxx.obj
-C:/TDM-GCC-32/bin/c++.exe     -o CMakeFiles/cmTC_f6403.dir/testCXXCompiler.cxx.obj -c D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_f6403.exe
-"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_f6403.dir/objects.a
-C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_f6403.dir/objects.a @CMakeFiles/cmTC_f6403.dir/objects1.rsp
-C:/TDM-GCC-32/bin/c++.exe      -Wl,--whole-archive CMakeFiles/cmTC_f6403.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f6403.exe -Wl,--out-implib,libcmTC_f6403.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f6403.dir/linklibs.rsp
+Building CXX object CMakeFiles/cmTC_8cb07.dir/testCXXCompiler.cxx.obj
+C:/TDM-GCC-32/bin/c++.exe     -o CMakeFiles/cmTC_8cb07.dir/testCXXCompiler.cxx.obj -c D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_8cb07.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_8cb07.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_8cb07.dir/objects.a @CMakeFiles/cmTC_8cb07.dir/objects1.rsp
+C:/TDM-GCC-32/bin/c++.exe      -Wl,--whole-archive CMakeFiles/cmTC_8cb07.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8cb07.exe -Wl,--out-implib,libcmTC_8cb07.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_8cb07.dir/linklibs.rsp
 make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
 
 
@@ -267,18 +267,18 @@ make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFil
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_63944/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_63944.dir/build.make CMakeFiles/cmTC_63944.dir/build
+Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_3b496/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_3b496.dir/build.make CMakeFiles/cmTC_3b496.dir/build
 make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj
-C:/TDM-GCC-32/bin/c++.exe    -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
+Building CXX object CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj
+C:/TDM-GCC-32/bin/c++.exe    -v -o CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
 Using built-in specs.
 COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe
 Target: mingw32
 Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
 Thread model: posix
 gcc version 9.2.0 (tdm-1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
- C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbZSi7.s
 GNU C++14 (tdm-1) version 9.2.0 (mingw32)
 	compiled by GNU C version 9.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -305,16 +305,16 @@ GNU C++14 (tdm-1) version 9.2.0 (mingw32)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: cec88cab7e5656891cdd620c5c33a356
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
- C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbZSi7.s
 GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
 COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
 LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
-Linking CXX executable cmTC_63944.exe
-"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_63944.dir/objects.a
-C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_63944.dir/objects.a @CMakeFiles/cmTC_63944.dir/objects1.rsp
-C:/TDM-GCC-32/bin/c++.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_63944.dir/objects.a -Wl,--no-whole-archive  -o cmTC_63944.exe -Wl,--out-implib,libcmTC_63944.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro'
+Linking CXX executable cmTC_3b496.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_3b496.dir/objects.a
+C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_3b496.dir/objects.a @CMakeFiles/cmTC_3b496.dir/objects1.rsp
+C:/TDM-GCC-32/bin/c++.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_3b496.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3b496.exe -Wl,--out-implib,libcmTC_3b496.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe
 COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe
@@ -324,9 +324,9 @@ Thread model: posix
 gcc version 9.2.0 (tdm-1) 
 COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../libexec/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
 LIBRARY_PATH=C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/;C:/TDM-GCC-32/bin/../lib/gcc/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63944.exe' '-mtune=generic' '-march=pentiumpro'
- C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cctyf1SH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_63944.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_63944.dir/objects.a --no-whole-archive --out-implib libcmTC_63944.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63944.exe' '-mtune=generic' '-march=pentiumpro'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b496.exe' '-mtune=generic' '-march=pentiumpro'
+ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccqKFXle.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_3b496.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_3b496.dir/objects.a --no-whole-archive --out-implib libcmTC_3b496.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b496.exe' '-mtune=generic' '-march=pentiumpro'
 make.exe[1]: Leaving directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp'
 
 
@@ -354,18 +354,18 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_63944/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_63944.dir/build.make CMakeFiles/cmTC_63944.dir/build]
+  ignore line: [Run Build Command(s):C:/PROGRA~2/make-3.81/bin/make.exe cmTC_3b496/fast && C:/PROGRA~2/make-3.81/bin/make.exe  -f CMakeFiles/cmTC_3b496.dir/build.make CMakeFiles/cmTC_3b496.dir/build]
   ignore line: [make.exe[1]: Entering directory `D:/Projects/mobile-speaker-driver/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:/TDM-GCC-32/bin/c++.exe    -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"]
+  ignore line: [Building CXX object CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:/TDM-GCC-32/bin/c++.exe    -v -o CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe]
   ignore line: [Target: mingw32]
   ignore line: [Configured with: ../../../src/gcc-git-9.2.0/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --disable-build-format-warnings --enable-libstdcxx-time --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --disable-symvers --enable-large-address-aware --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-checking=release --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.2.0 (tdm-1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
-  ignore line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=pentiumpro -auxbase-strip CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbZSi7.s]
   ignore line: [GNU C++14 (tdm-1) version 9.2.0 (mingw32)]
   ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -392,8 +392,8 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: cec88cab7e5656891cdd620c5c33a356]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
-  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccPRyDuB.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [ C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\BEZRAZ~1\AppData\Local\Temp\ccQbZSi7.s]
   ignore line: [GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32]
   ignore line: [COMPILER_PATH=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/]
   ignore line: [C:/TDM-GCC-32/bin/../libexec/gcc/]
@@ -402,11 +402,11 @@ Parsed CXX implicit link information from above output:
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63944.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
-  ignore line: [Linking CXX executable cmTC_63944.exe]
-  ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_63944.dir/objects.a]
-  ignore line: [C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_63944.dir/objects.a @CMakeFiles/cmTC_63944.dir/objects1.rsp]
-  ignore line: [C:/TDM-GCC-32/bin/c++.exe     -v -Wl --whole-archive CMakeFiles/cmTC_63944.dir/objects.a -Wl --no-whole-archive  -o cmTC_63944.exe -Wl --out-implib libcmTC_63944.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b496.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [Linking CXX executable cmTC_3b496.exe]
+  ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_3b496.dir/objects.a]
+  ignore line: [C:/TDM-GCC-32/bin/ar.exe cr CMakeFiles/cmTC_3b496.dir/objects.a @CMakeFiles/cmTC_3b496.dir/objects1.rsp]
+  ignore line: [C:/TDM-GCC-32/bin/c++.exe     -v -Wl --whole-archive CMakeFiles/cmTC_3b496.dir/objects.a -Wl --no-whole-archive  -o cmTC_3b496.exe -Wl --out-implib libcmTC_3b496.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:/TDM-GCC-32/bin/c++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe]
@@ -421,13 +421,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/]
   ignore line: [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63944.exe' '-mtune=generic' '-march=pentiumpro']
-  link line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cctyf1SH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_63944.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_63944.dir/objects.a --no-whole-archive --out-implib libcmTC_63944.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b496.exe' '-mtune=generic' '-march=pentiumpro']
+  link line: [ C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe -plugin C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccqKFXle.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic --large-address-aware -o cmTC_3b496.exe C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0 -LC:/TDM-GCC-32/bin/../lib/gcc -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib -LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../.. --whole-archive CMakeFiles/cmTC_3b496.dir/objects.a --no-whole-archive --out-implib libcmTC_3b496.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/default-manifest.o C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtend.o]
     arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=C:/TDM-GCC-32/bin/../libexec/gcc/mingw32/9.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\cctyf1SH.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\BEZRAZ~1\AppData\Local\Temp\ccqKFXle.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
@@ -447,7 +447,7 @@ Parsed CXX implicit link information from above output:
     arg [-Bdynamic] ==> ignore
     arg [--large-address-aware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_63944.exe] ==> ignore
+    arg [cmTC_3b496.exe] ==> ignore
     arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../crt2.o] ==> ignore
     arg [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/crtbegin.o] ==> ignore
     arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0]
@@ -455,10 +455,10 @@ Parsed CXX implicit link information from above output:
     arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib]
     arg [-LC:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..] ==> dir [C:/TDM-GCC-32/bin/../lib/gcc/mingw32/9.2.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_63944.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_3b496.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_63944.dll.a] ==> ignore
+    arg [libcmTC_3b496.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore

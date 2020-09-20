@@ -77,24 +77,10 @@ include tests/CMakeFiles/mobile_speaker_driver_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/mobile_speaker_driver_test.dir/flags.make
 
-tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/flags.make
-tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/includes_CXX.rsp
-tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj: ../tests/AudioDriverTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj"
-	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj -c D:/Projects/mobile-speaker-driver/tests/AudioDriverTest.cpp
-
-tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.i"
-	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/mobile-speaker-driver/tests/AudioDriverTest.cpp > CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.i
-
-tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.s"
-	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/mobile-speaker-driver/tests/AudioDriverTest.cpp -o CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.s
-
 tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/flags.make
 tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/includes_CXX.rsp
 tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj: ../tests/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj"
 	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj -c D:/Projects/mobile-speaker-driver/tests/main.cpp
 
 tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.i: cmake_force
@@ -104,6 +90,20 @@ tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.i: cmake_force
 tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.s"
 	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/mobile-speaker-driver/tests/main.cpp -o CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.s
+
+tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/flags.make
+tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/includes_CXX.rsp
+tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj: ../tests/AudioDriverTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/Projects/mobile-speaker-driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj"
+	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj -c D:/Projects/mobile-speaker-driver/tests/AudioDriverTest.cpp
+
+tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.i"
+	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/mobile-speaker-driver/tests/AudioDriverTest.cpp > CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.i
+
+tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.s"
+	cd D:/Projects/mobile-speaker-driver/build/tests && C:/TDM-GCC-32/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/mobile-speaker-driver/tests/AudioDriverTest.cpp -o CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.s
 
 tests/CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriver.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/flags.make
 tests/CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriver.cpp.obj: tests/CMakeFiles/mobile_speaker_driver_test.dir/includes_CXX.rsp
@@ -149,8 +149,8 @@ tests/CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriverWindows.cpp.s:
 
 # Object files for target mobile_speaker_driver_test
 mobile_speaker_driver_test_OBJECTS = \
-"CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj" \
 "CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj" \
+"CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj" \
 "CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriver.cpp.obj" \
 "CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriverLinux.cpp.obj" \
 "CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriverWindows.cpp.obj"
@@ -158,12 +158,14 @@ mobile_speaker_driver_test_OBJECTS = \
 # External object files for target mobile_speaker_driver_test
 mobile_speaker_driver_test_EXTERNAL_OBJECTS =
 
-tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj
 tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/main.cpp.obj
+tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/AudioDriverTest.cpp.obj
 tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriver.cpp.obj
 tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriverLinux.cpp.obj
 tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/__/src/AudioDriverWindows.cpp.obj
 tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/build.make
+tests/mobile_speaker_driver_test.exe: lib/libgtest.a
+tests/mobile_speaker_driver_test.exe: lib/libgtest_main.a
 tests/mobile_speaker_driver_test.exe: lib/libgtest.a
 tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/linklibs.rsp
 tests/mobile_speaker_driver_test.exe: tests/CMakeFiles/mobile_speaker_driver_test.dir/objects1.rsp

@@ -4,12 +4,16 @@ cmake_minimum_required(VERSION 3.10)
 # Declare project
 project(mobile_speaker_driver)
 
+# Adding googletest to project
+option(PACKAGE_TESTS "Build the tests" ON)
+if(PACKAGE_TESTS)
+    enable_testing()
+    include(GoogleTest)
+    add_subdirectory(tests)
+endif()
+
 # Change c++ standard
 set(CMAKE_CXX_STANDARD 17)
-
-# Adding subdirs to project
-add_subdirectory(tests)
-add_subdirectory(extern/googletest)
 
 # Add source files to driver library
 if (WIN32)

@@ -17,9 +17,10 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Add source files to driver library
 if (WIN32)
-    set(SOURCE_FILES apps/main.cpp src/AudioDriver.cpp src/AudioDriverWindows.cpp)
+    set(SOURCE_FILES apps/main.cpp src/AudioDriver.cpp src/AudioDriverWindows.cpp src/WifiConnector.cpp)
+    ADD_DEFINITIONS(-DUNICODE -D_UNICODE)
 elseif (UNIX)
-    set(SOURCE_FILES apps/main.cpp src/AudioDriver.cpp src/AudioDriverLinux.cpp)
+    set(SOURCE_FILES apps/main.cpp src/AudioDriver.cpp src/AudioDriverLinux.cpp src/WifiConnector.cpp)
 endif (WIN32)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})

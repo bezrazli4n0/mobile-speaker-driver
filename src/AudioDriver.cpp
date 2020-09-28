@@ -1,11 +1,11 @@
 #include "../include/msd/AudioDriver.h"
 
 namespace msd {
-    AudioDriverAbstract* AudioDriver::getInstanceForPlatform() {
+    AudioDriverAbstract* AudioDriver::getInstanceForPlatform(Connectable* connectable) {
         #ifdef _WIN32
-            return new AudioDriverWindows{};
+            return new AudioDriverWindows{ connectable };
         #elif __linux__
-            return new AudioDriverLinux{};
+            return new AudioDriverLinux{ connectable };
         #endif
     }
 }

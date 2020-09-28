@@ -5,10 +5,11 @@
 #elif __linux__
     #include "AudioDriverLinux.h"
 #endif
+#include "Connectable.h"
 
 namespace msd {
     class AudioDriver {
     public:
-        static AudioDriverAbstract* getInstanceForPlatform();
+        static AudioDriverAbstract* getInstanceForPlatform(Connectable* connectable = nullptr);
     };
 }

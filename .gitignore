@@ -21,6 +21,7 @@
 *.smod
 
 # Output folder
+build/*
 build/
 
 # Compiled Static libraries

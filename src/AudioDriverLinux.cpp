@@ -4,7 +4,8 @@
 #include <iostream>
 
 namespace msd {
-    AudioDriverLinux::AudioDriverLinux() {
+    AudioDriverLinux::AudioDriverLinux(Connectable* connectable) {
+        this->connectable = connectable;
     }
 
     AudioDriverLinux::~AudioDriverLinux() {

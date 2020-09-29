@@ -1,15 +1,22 @@
-#include "../include/msd/WifiConnector.h"
 #ifdef _WIN32
-#pragma comment(lib, "Ws2_32")
+    #pragma comment(lib, "Ws2_32")
 
-#define _WINSOCKAPI_
+    #define _WINSOCKAPI_
 
-#include <Windows.h>
-#include <WinSock2.h>
-#include <ws2tcpip.h>
+    #include <Windows.h>
+    #include <WinSock2.h>
+    #include <ws2tcpip.h>
+#elif __linux__
+    #include <sys/types.h>
+    #include <sys/socket.h>
+    #include <arpa/inet.h>
+    #include <unistd.h>
+
+    #define SOCKET int
 #endif
 
-#include <exception>
+#include "../include/msd/WifiConnector.h"
+#include <stdexcept>
 
 namespace msd {
     class WifiConnector::impl {
@@ -29,7 +36,7 @@ namespace msd {
         WSAStartup(MAKEWORD(2, 2), &wsaData);
     #endif
         if (connSocket = socket(AF_INET, SOCK_DGRAM, 0); connSocket < 0)
-            throw new std::exception{ "UDP socket is not created" };
+            throw new std::runtime_error{ "UDP socket is not created" };
 
         serverAddr.sin_family = AF_INET;
         serverAddr.sin_port = htons(port);
@@ -39,8 +46,10 @@ namespace msd {
     WifiConnector::impl::~impl() {
     #ifdef _WIN32
         WSACleanup();
-    #endif
         closesocket(connSocket);
+    #elif __linux__
+        close(connSocket);
+    #endif
     }
 
     void WifiConnector::impl::sendData(void* data, long size) {

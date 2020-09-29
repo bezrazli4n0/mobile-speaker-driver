@@ -11,10 +11,7 @@
 #include <Windows.h>
 #include <WinSock2.h>
 #include <ws2tcpip.h>
-#include <string>
-#include <chrono>
 #include <exception>
-#include <iostream>
 
 namespace msd {
     class AudioDriverWindows::impl {
@@ -71,7 +68,6 @@ namespace msd {
 
             case WAVE_FORMAT_EXTENSIBLE:
             {
-                // naked scope for case-local variable
                 PWAVEFORMATEXTENSIBLE pEx = reinterpret_cast<PWAVEFORMATEXTENSIBLE>(pwfx);
                 if (IsEqualGUID(KSDATAFORMAT_SUBTYPE_IEEE_FLOAT, pEx->SubFormat)) {
                     pEx->SubFormat = KSDATAFORMAT_SUBTYPE_PCM;
@@ -81,7 +77,7 @@ namespace msd {
                     pwfx->nAvgBytesPerSec = pwfx->nBlockAlign * pwfx->nSamplesPerSec;
                 }
                 else
-                    throw new std::exception{ "Don't know how to coerce mix format to int-16" };
+                    throw new std::exception{ "Don't know how to convert to pcm 16 format" };
             }
             break;
 
@@ -154,9 +150,8 @@ namespace msd {
                 if (FAILED(pImpl->pAudioCaptureClient->GetBuffer(&pData, &nNumFramesToRead, &dwFlags, nullptr, nullptr)))
                     throw new std::exception{ "Can't get audio capture buffer" };
 
-                LONG lBytesToWrite = nNumFramesToRead * pImpl->pwfx->nBlockAlign;
                 if (connectable != nullptr)
-                    connectable->sendData(pData, lBytesToWrite);
+                    connectable->sendData(pData, nNumFramesToRead * pImpl->pwfx->nBlockAlign);
 
                 if (FAILED(pImpl->pAudioCaptureClient->ReleaseBuffer(nNumFramesToRead)))
                     throw new std::exception{ "Can't release audio capture buffer" };
@@ -170,7 +165,7 @@ namespace msd {
         try {
             init();
             pImpl->createAudioClient();
-            // TODO: send format to server
+            // TODO: sync mobile and device PCM format
             pImpl->getDeviceMixFormat();
             pImpl->convertFormatToPcm16();
             pImpl->initAudioClient();

@@ -16,6 +16,7 @@ namespace msd {
 
         void init();
         void audioLoopback();
+        void initAvrt();
     public:
         virtual void initDriver();
         virtual void freeDriver();

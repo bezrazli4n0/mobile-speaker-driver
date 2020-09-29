@@ -2,6 +2,7 @@
 
 #pragma comment(lib, "Winmm")
 #pragma comment(lib, "Ws2_32")
+#pragma comment(lib, "Avrt")
 
 #define _WINSOCKAPI_
 
@@ -11,6 +12,7 @@
 #include <Windows.h>
 #include <WinSock2.h>
 #include <ws2tcpip.h>
+#include <avrt.h>
 #include <exception>
 
 namespace msd {
@@ -161,6 +163,13 @@ namespace msd {
         }
     }
 
+    void AudioDriverWindows::initAvrt() {
+        DWORD nTaskIndex{};
+        HANDLE hTask = AvSetMmThreadCharacteristicsW(L"Audio", &nTaskIndex);
+        if (hTask == nullptr)
+            throw new std::exception{ "Avrt initialization error" };
+    }
+
     void AudioDriverWindows::initDriver() {
         try {
             init();
@@ -170,6 +179,7 @@ namespace msd {
             pImpl->convertFormatToPcm16();
             pImpl->initAudioClient();
             pImpl->createAudioCaptureClient();
+            initAvrt();
             audioLoopback();
         }
         catch (const std::exception& ex) {

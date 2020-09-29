@@ -1,5 +1,5 @@
 # Setup cmake minimal required version
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.0)
 
 # Declare project
 project(mobile_speaker_driver)
@@ -12,8 +12,10 @@ if(PACKAGE_TESTS)
     add_subdirectory(tests)
 endif()
 
-# Change c++ standard
+# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add source files to driver library
 if (WIN32)
@@ -24,3 +26,8 @@ elseif (UNIX)
 endif (WIN32)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+
+# Link alsa library
+if (UNIX)
+    target_link_libraries(${PROJECT_NAME} asound)
+endif (UNIX)

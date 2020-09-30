@@ -11,6 +11,9 @@ namespace msd {
         Connectable* connectable{};
         AudioDriverLinux(Connectable* connectable = nullptr);
 
+        class impl;
+        impl* pImpl{};
+
     public:
         virtual void initDriver();
         virtual void freeDriver();

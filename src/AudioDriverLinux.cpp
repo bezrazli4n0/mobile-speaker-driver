@@ -1,102 +1,155 @@
 #ifdef __linux__
 
 #include "../include/msd/AudioDriverLinux.h"
-#include <iostream>
 #include <stdexcept>
 #include <alsa/asoundlib.h>
+#include <string>
 
 namespace msd {
-    AudioDriverLinux::AudioDriverLinux(Connectable* connectable) {
-        this->connectable = connectable;
-    }
-
-    AudioDriverLinux::~AudioDriverLinux() {
-    }
-
-    void AudioDriverLinux::initDriver() {
-        std::cout << "Linux driver loaded!" << std::endl;
-        
-        char* device = "default";
-        unsigned int rate = 48000;
-        unsigned int channels = 2;
-        unsigned int periodSize = 32;
-        unsigned int periodTime = 0;
-        unsigned int framesTime = periodTime;
+    class AudioDriverLinux::impl {
+    private:
+        const unsigned int rate = 44100;
+        const unsigned int channels = 2;
+        const unsigned int periodSize = 1024;
+        const unsigned int periodTime = 0;
+        const unsigned int framesTime = periodTime;
         snd_pcm_uframes_t frames{};
 
-        snd_pcm_t* capture_handle{};
-        snd_pcm_hw_params_t* hw_params{};
+        snd_pcm_t* captureHandle{};
+        snd_pcm_hw_params_t* hwParams{};
+        const std::string device = "hw:Loopback,1";
 
-        if (snd_pcm_open(&capture_handle, device, SND_PCM_STREAM_CAPTURE, 0) < 0)
+        unsigned int* buffer{};
+        unsigned int bufferSize{};
+    public:
+        impl();
+        ~impl();
+        
+        void openDevice();
+        void configureDevice();
+        void getActualRates();
+        void prepareDevice();
+        void audioLoopback(Connectable* connectable);
+
+        void freeInterface();
+    };
+
+    AudioDriverLinux::impl::impl() {
+    }
+
+    AudioDriverLinux::impl::~impl() {
+        freeInterface();
+    }
+
+    void AudioDriverLinux::impl::freeInterface() {
+        if (buffer != nullptr) {
+            delete[] buffer;
+            buffer = nullptr;
+        }
+
+        if (captureHandle != nullptr) {
+            snd_pcm_drain(captureHandle);
+            snd_pcm_close(captureHandle);
+            captureHandle = nullptr;
+        }
+    }
+
+    void AudioDriverLinux::impl::openDevice() {
+        if (snd_pcm_open(&captureHandle, device.c_str(), SND_PCM_STREAM_CAPTURE, 0) < 0)
             throw new std::runtime_error{ "Can't open device for capture" };
+    }
 
-        if (snd_pcm_hw_params_malloc(&hw_params) < 0)
+    void AudioDriverLinux::impl::configureDevice() {
+        if (snd_pcm_hw_params_malloc(&hwParams) < 0)
             throw new std::runtime_error{ "Can't allocate hw parameters structure" };
 
-        if (snd_pcm_hw_params_any(capture_handle, hw_params) < 0)
+        if (snd_pcm_hw_params_any(captureHandle, hwParams) < 0)
             throw new std::runtime_error{ "Can't initialize parameters structure" };
 
-        if (snd_pcm_hw_params_set_access(capture_handle, hw_params, SND_PCM_ACCESS_RW_INTERLEAVED) < 0)
+        if (snd_pcm_hw_params_set_access(captureHandle, hwParams, SND_PCM_ACCESS_RW_INTERLEAVED) < 0)
             throw new std::runtime_error{ "Can't set access parameter" };
 
-        if (snd_pcm_hw_params_set_format(capture_handle, hw_params, SND_PCM_FORMAT_S16_LE) < 0)
+        if (snd_pcm_hw_params_set_format(captureHandle, hwParams, SND_PCM_FORMAT_S16_LE) < 0)
             throw new std::runtime_error{ "Can't set format parameter" };
 
-        if (snd_pcm_hw_params_set_rate_near(capture_handle, hw_params, &rate, 0) < 0)
+        if (snd_pcm_hw_params_set_rate_near(captureHandle, hwParams, const_cast<unsigned int*>(&rate), 0) < 0)
             throw new std::runtime_error{ "Can't set rate" };
 
         frames = periodSize;
-        if (snd_pcm_hw_params_set_period_size_near(capture_handle, hw_params, &frames, 0) < 0)
+        if (snd_pcm_hw_params_set_period_size_near(captureHandle, hwParams, &frames, 0) < 0)
             throw new std::runtime_error{ "Can't set period" };
 
-        if (snd_pcm_hw_params_set_period_time_near(capture_handle, hw_params, &framesTime, 0) < 0)
+        if (snd_pcm_hw_params_set_period_time_near(captureHandle, hwParams, const_cast<unsigned int*>(&framesTime), 0) < 0)
             throw new std::runtime_error{ "Can't set period time" };
 
-        if (snd_pcm_hw_params_set_channels(capture_handle, hw_params, channels) < 0)
+        if (snd_pcm_hw_params_set_channels(captureHandle, hwParams, channels) < 0)
             throw new std::runtime_error{ "Can't set channels count" };
 
-        if (snd_pcm_hw_params(capture_handle, hw_params) < 0)
+        if (snd_pcm_hw_params(captureHandle, hwParams) < 0)
             throw new std::runtime_error{ "Can't set parameters" };
+    }
 
-        // get actual rate
+    void AudioDriverLinux::impl::getActualRates() {
         unsigned int actualRate{};
-        snd_pcm_hw_params_get_rate(hw_params, &actualRate, 0);
+        snd_pcm_hw_params_get_rate(hwParams, &actualRate, 0);
 
-        // get period size
-        snd_pcm_hw_params_get_period_size(hw_params, &frames, 0);
+        snd_pcm_hw_params_get_period_size(hwParams, &frames, 0);
 
-        // get actual period time
         unsigned int actualPeriodTime{};
-        snd_pcm_hw_params_get_period_time(hw_params, &actualPeriodTime, 0);
+        snd_pcm_hw_params_get_period_time(hwParams, &actualPeriodTime, 0);
+    }
 
-        // free params struct
-        snd_pcm_hw_params_free(hw_params);
+    void AudioDriverLinux::impl::prepareDevice() {
+        snd_pcm_hw_params_free(hwParams);
+        hwParams = nullptr;
 
-        unsigned int bufferSize = (frames * channels * snd_pcm_format_physical_width(SND_PCM_FORMAT_S16_LE)) / 8;
+        bufferSize = (frames * channels * snd_pcm_format_physical_width(SND_PCM_FORMAT_S16_LE)) / 8;
 
-        if (snd_pcm_prepare(capture_handle) < 0)
+        if (snd_pcm_prepare(captureHandle) < 0)
             throw new std::runtime_error{ "Can't prepare capture device" };
 
-        unsigned int buf[bufferSize];
+        buffer = new unsigned int[bufferSize]{};
+    }
+
+    void AudioDriverLinux::impl::audioLoopback(Connectable* connectable) {
         while (true) {
-            auto rc = snd_pcm_readi(capture_handle, &buf[0], frames);
+            auto rc = snd_pcm_readi(captureHandle, buffer, frames);
             if (rc == -EPIPE)
-                snd_pcm_prepare(capture_handle);
+                snd_pcm_prepare(captureHandle);
             else if (rc < 0)
                 throw new std::runtime_error{ "Error while reading from device" };
             else if (rc != frames)
                 throw new std::runtime_error{ "Error, readed frames must eq. to actual frames" };
 
             if (connectable != nullptr)
-                connectable->sendData(buf, bufferSize);
+                connectable->sendData(buffer, bufferSize);
         }
+    }
 
-        snd_pcm_drain(capture_handle);
-        snd_pcm_close(capture_handle);
+    AudioDriverLinux::AudioDriverLinux(Connectable* connectable) {
+        this->connectable = connectable;
+        pImpl = new impl{};
+    }
+
+    AudioDriverLinux::~AudioDriverLinux() {
+        delete pImpl;
+    }
+
+    void AudioDriverLinux::initDriver() {
+        try {
+            pImpl->openDevice();
+            pImpl->configureDevice();
+            pImpl->getActualRates();
+            pImpl->prepareDevice();
+            pImpl->audioLoopback(connectable);
+        }
+        catch(const std::runtime_error* e) {
+            throw new std::runtime_error{ "Critical error on driver initialization" };
+        }
     }
 
     void AudioDriverLinux::freeDriver() {
-        std::cout << "Linux driver unloaded!" << std::endl;
+        pImpl->freeInterface();
     }
 }
 

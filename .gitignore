@@ -24,6 +24,10 @@
 build/*
 build/
 
+# Visual studio code folder
+.vscode/*
+.vscode/
+
 # Compiled Static libraries
 *.lai
 *.la

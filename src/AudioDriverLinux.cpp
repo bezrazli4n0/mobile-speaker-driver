@@ -15,6 +15,10 @@ namespace msd {
         const unsigned int framesTime = periodTime;
         snd_pcm_uframes_t frames{};
 
+        unsigned int actualSampleRate{};
+        unsigned int actualPeriodTime{};
+        unsigned int actualChannels{};
+
         snd_pcm_t* captureHandle{};
         snd_pcm_hw_params_t* hwParams{};
         const std::string device = "hw:Loopback,1";
@@ -42,9 +46,16 @@ namespace msd {
     }
 
     void AudioDriverLinux::impl::freeInterface() {
+        actualSampleRate = actualPeriodTime = actualChannels = 0;
+
         if (buffer != nullptr) {
             delete[] buffer;
             buffer = nullptr;
+        }
+
+        if (hwParams != nullptr) {
+            snd_pcm_hw_params_free(hwParams);
+            hwParams = nullptr;
         }
 
         if (captureHandle != nullptr) {
@@ -90,13 +101,13 @@ namespace msd {
     }
 
     void AudioDriverLinux::impl::getActualRates() {
-        unsigned int actualRate{};
-        snd_pcm_hw_params_get_rate(hwParams, &actualRate, 0);
+        snd_pcm_hw_params_get_rate(hwParams, &actualSampleRate, 0);
 
         snd_pcm_hw_params_get_period_size(hwParams, &frames, 0);
 
-        unsigned int actualPeriodTime{};
         snd_pcm_hw_params_get_period_time(hwParams, &actualPeriodTime, 0);
+
+        snd_pcm_hw_params_get_channels(hwParams, &actualChannels);
     }
 
     void AudioDriverLinux::impl::prepareDevice() {
@@ -133,6 +144,14 @@ namespace msd {
 
     AudioDriverLinux::~AudioDriverLinux() {
         delete pImpl;
+    }
+
+    std::pair<unsigned int, unsigned int> AudioDriverLinux::getRates() {
+        pImpl->openDevice();
+        pImpl->configureDevice();
+        pImpl->getActualRates();
+        pImpl->freeInterface();
+        return { actualSampleRate, actualChannels };
     }
 
     void AudioDriverLinux::initDriver() {

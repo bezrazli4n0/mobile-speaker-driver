@@ -163,6 +163,16 @@ namespace msd {
         }
     }
 
+    std::pair<unsigned int, unsigned int> AudioDriverWindows::getRates() {
+        init();
+        pImpl->createAudioClient();
+        pImpl->getDeviceMixFormat();
+        auto samples = pImpl->pwfx->nSamplesPerSec;
+        auto channels = pImpl->pwfx->nChannels;
+        pImpl->freeInterface();
+        return { samples, channels };
+    }
+
     void AudioDriverWindows::initAvrt() {
         DWORD nTaskIndex{};
         HANDLE hTask = AvSetMmThreadCharacteristicsW(L"Audio", &nTaskIndex);
@@ -174,7 +184,6 @@ namespace msd {
         try {
             init();
             pImpl->createAudioClient();
-            // TODO: sync mobile and device PCM format
             pImpl->getDeviceMixFormat();
             pImpl->convertFormatToPcm16();
             pImpl->initAudioClient();

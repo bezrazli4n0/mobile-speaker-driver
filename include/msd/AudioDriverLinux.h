@@ -17,6 +17,7 @@ namespace msd {
     public:
         virtual void initDriver();
         virtual void freeDriver();
+        virtual std::pair<unsigned int, unsigned int> getRates();
 
         virtual ~AudioDriverLinux();
 

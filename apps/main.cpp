@@ -14,7 +14,7 @@ int main(int argc, const char* argv[]) {
             if (arg == std::string{ "--rates" }) {
                 msd::AudioDriverAbstract* driver = msd::AudioDriver::getInstanceForPlatform(nullptr);
                 auto [rate, channels] = driver->getRates();
-                std::cout << "{\"rate\":" << rate << ",\"channels\":" << channels << "}";
+                std::cout << "{\"rate\":" << rate << ",\"channels\":" << channels << "}" << std::endl;
                 return 0;
             } else if (arg.find("--ip=") != std::string::npos) {
                 std::string clientIP = arg.substr(arg.find("--ip=") + 5);

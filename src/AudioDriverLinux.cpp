@@ -34,6 +34,8 @@ namespace msd {
         void getActualRates();
         void prepareDevice();
         void audioLoopback(Connectable* connectable);
+        unsigned int getActualSampleRate() const;
+        unsigned int getActualChannels() const;
 
         void freeInterface();
     };
@@ -137,6 +139,14 @@ namespace msd {
         }
     }
 
+    unsigned int AudioDriverLinux::impl::getActualSampleRate() const {
+        return actualSampleRate;
+    }
+
+    unsigned int AudioDriverLinux::impl::getActualChannels() const {
+        return actualChannels;
+    }
+
     AudioDriverLinux::AudioDriverLinux(Connectable* connectable) {
         this->connectable = connectable;
         pImpl = new impl{};
@@ -150,8 +160,12 @@ namespace msd {
         pImpl->openDevice();
         pImpl->configureDevice();
         pImpl->getActualRates();
+        
+        auto rate = pImpl->getActualSampleRate();
+        auto channels = pImpl->getActualChannels();
+        
         pImpl->freeInterface();
-        return { actualSampleRate, actualChannels };
+        return { rate, channels };
     }
 
     void AudioDriverLinux::initDriver() {
@@ -162,7 +176,7 @@ namespace msd {
             pImpl->prepareDevice();
             pImpl->audioLoopback(connectable);
         }
-        catch(const std::runtime_error* e) {
+        catch (const std::runtime_error* e) {
             throw new std::runtime_error{ "Critical error on driver initialization" };
         }
     }

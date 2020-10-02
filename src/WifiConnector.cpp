@@ -3,9 +3,9 @@
 
     #define _WINSOCKAPI_
 
-    #include <Windows.h>
     #include <WinSock2.h>
     #include <ws2tcpip.h>
+    #include <Windows.h>
 #elif __linux__
     #include <sys/types.h>
     #include <sys/socket.h>

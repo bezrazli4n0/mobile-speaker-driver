@@ -12,6 +12,10 @@ if(PACKAGE_TESTS)
     add_subdirectory(tests)
 endif()
 
+# Include cxxopts
+add_subdirectory(extern/cxxopts)
+include_directories(extern/cxxopts/include)
+
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

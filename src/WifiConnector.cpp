@@ -45,8 +45,8 @@ namespace msd {
 
     WifiConnector::impl::~impl() {
     #ifdef _WIN32
-        WSACleanup();
         closesocket(connSocket);
+        WSACleanup();
     #elif __linux__
         close(connSocket);
     #endif

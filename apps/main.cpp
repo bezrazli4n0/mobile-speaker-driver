@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <regex>
+#include <sstream>
 #include "../include/msd/AudioDriver.h"
 #include "../include/msd/WifiConnector.h"
 #include "cxxopts.hpp"
@@ -47,6 +48,13 @@ int main(int argc, const char* argv[]) {
     const unsigned int port{ 6767 };
     msd::WifiConnector wifiConnector{ destIP, port };
     msd::AudioDriverAbstract* driver = msd::AudioDriver::getInstanceForPlatform(&wifiConnector);
+
+    auto [rate, channels] = driver->getRates();
+    std::stringstream ratesStream{};
+    ratesStream << "{\"rate\":" << rate << ",\"channels\":" << channels << "}";
+    std::string jsonRates = ratesStream.str();
+    wifiConnector.sendRates(jsonRates);
+
     std::cout << "Started on " << destIP << ":" << port << std::endl;
     driver->initDriver();
     driver->freeDriver();

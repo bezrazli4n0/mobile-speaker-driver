@@ -12,6 +12,8 @@ namespace msd {
     public:
         WifiConnector(const std::string ip, const unsigned short port);
         ~WifiConnector();
+        
+        virtual void sendRates(const std::string jsonData);
 
         virtual void sendData(void* data, long size);
     };
